@@ -90,7 +90,9 @@ export default function App() {
   };
 
   const renderResults = () => {
-    if (!result || result.length === 0) return <p>Nessun risultato trovato.</p>;
+    if (!result || result.length === 0) {
+      return <p>Nessun risultato trovato.</p>;
+    }
 
     return result.map((res, i) => (
       <div key={i} style={{ marginBottom: '2rem', borderBottom: '1px solid #ccc', paddingBottom: '1rem' }}>
